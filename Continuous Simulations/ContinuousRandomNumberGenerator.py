@@ -3,10 +3,10 @@ import math
 #A MAJOR limitation of this program at the moment is the inability for it to work with any function that has asymptopes.
 #The algorithm inherently allows any function to become a density curve, but bounded regions must be defined so that area is finite.
 #However, the algorithm works on relative proportions, so bounded are does not need to be equal to 1
-#In this sense, it allows for great versitility with one fatal drawback that is inconveient at best and inefficient at worst
+#The program is, in a sense, a monte carlo simulation applied to a continuous function
 #===========================================================================================================================================
 #===========================================================================================================================================
-#function defines density curve. (Must work in conjunction with findZeroes()
+#function defines density curve. (Must work in conjunction with findZeroes())
 def densityCurve(x):
   y = float(-1*(math.log10(x**7))+12) #Although this is not an input that is run, that curve may be changed to any function one wants.
   return y
